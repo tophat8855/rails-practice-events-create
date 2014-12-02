@@ -1,31 +1,31 @@
 <%= form_for @event, html: { class:"form-horizontal"} do |f| %>
-  <div class = "form group">
+<div class = "form group">
   <%= f.label :date %>
   <%= f.date_field :date %>
-  </div>
+</div>
 
-  <div class = "form group">
+<div class = "form group">
   <%= f.label :description %>
   <%= f.text_field :description %>
-  </div>
+</div>
 
-  <div class = "form group">
+<div class = "form group">
   <%= f.label :requires_id %>
   <%= f.check_box :requires_id %>
-  </div>
+</div>
 
-  <div class = "form group">
+<div class = "form group">
   <%= f.label :capacity %>
   <%= f.number_field :capacity %>
-  </div>
+</div>
 
-  <div class = "form group">
+<div class = "form group">
   <%= f.label :directions %>
   <%= f.text_area :directions %>
-  </div>
+</div>
 
-  <div class = "form group">
+<div class = "form group">
   <%= f.submit "Create Event", class: 'btn' %>
-  </div>
+</div>
 
 <%  end %>

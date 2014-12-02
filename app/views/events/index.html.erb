@@ -1,6 +1,6 @@
 <h1>Events</h1>
 
-<table>
+<table class = "table">
   <thead>
     <tr>
       <th>
@@ -30,6 +30,7 @@
         <td><%= event.requires_id %></td>
         <td><%= event.capacity %></td>
         <td><%= event.directions %></td>
+        <td><%= link_to "Edit", edit_event_path(event) %></td>
       </tr>
     <% end %>
 
