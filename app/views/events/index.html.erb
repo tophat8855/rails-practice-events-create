@@ -30,6 +30,9 @@
         <td><%= event.requires_id %></td>
         <td><%= event.capacity %></td>
         <td><%= event.directions %></td>
+        <td>
+          <%= link_to "Show", event_path(event) %>
+        </td>
         <td><%= link_to "Edit", edit_event_path(event) %></td>
         <td><%= link_to "Delete", event_path(event), method: :delete, data: {confirm: "Are you sure you want to do that, Dave?"} %></td>
       </tr>
